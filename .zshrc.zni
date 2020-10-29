@@ -1,0 +1,12 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' '' '' ''
+zstyle ':completion:*' max-errors 5
+zstyle :compinstall filename '/home/joachim/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
