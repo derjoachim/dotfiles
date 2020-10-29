@@ -1,0 +1,63 @@
+[global]
+    font = Roboto Regular 14
+    markup = full
+    plain_text = no
+    format = "<b>%s %p</b>\n%b"
+    alignment = center
+    sort = yes
+    indicate_hidden = yes
+    idle_threshold = 0
+    geometry = "450x80+735-500"
+    shrink = no
+    transparency = 5
+    alignment = center
+    show_age_threshold = 20
+    sticky_history = yes
+    follow = mouse
+    word_wrap = yes
+    ignore_newline = no
+    stack_duplicates = yes
+    hide_duplicates_count = no
+    separator_height = 2
+    padding = 6
+    horizontal_padding = 6
+    separator_color = frame
+    startup_notification = true
+    dmenu = "/usr/bin/dmenu -p dunst: -nb #FFFFFF -nf #000000 -sb #94DBFF -sf #000000"
+    browser = vivaldi-stable
+    icon_folders = /usr/share/icons/Adwaita/96x96/status/:/usr/share/icons/Adwaita/96x96/devices/
+    icon_position = left
+    max_icon_size = 80
+    frame_width = 2
+    corner-radius = 8
+    background = "#073642"
+
+
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+    context = ctrl+shift+period
+
+# IMPORTANT: colors have to be defined in quotation marks.
+# Otherwise the "#" and following would be interpreted as a comment.
+[urgency_low]
+frame_color = "#859900"
+foreground = "#859900"
+background = "#073642"
+timeout = 4
+
+[urgency_normal]
+frame_color = "#268BD2"
+foreground = "#268BD2"
+background = "#073642"
+timeout = 6
+
+[urgency_critical]
+frame_color = "#DC322F"
+foreground = "#DC322F"
+background = "#073642"
+timeout = 8
+
+
+# vim: ft=cfg
