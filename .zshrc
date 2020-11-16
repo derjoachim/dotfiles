@@ -85,7 +85,7 @@ plugins=(git git-flow archlinux )
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/id_ed25519"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -93,9 +93,16 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias vim="nvim"
 alias zshconfig="vim ~/.zshrc"
+alias i3config="vim ~/.config/i3/config"
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias dir="ls -lah"
+alias ls="exa"
+alias dir="exa -lah"
+alias cat="bat"
+alias ram="ps axch -o cmd:15,%mem --sort=-%mem | head"
+alias cpu="ps axch -o cmd:15,%cpu --sort=-%cpu | head"
+alias zzz="sudo systemctl suspend"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
