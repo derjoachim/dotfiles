@@ -28,7 +28,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # Display a helpful popup
 bindsym $mod+Shift+h exec ~/bin/i3wm_help.py
@@ -238,7 +238,7 @@ exec --no-startup-id redshift-gtk
 exec --no-startup-id "i3-msg 'workspace 1; append_layout /home/joachim/.config/i3/workspace1.json'"
 exec --no-startup-id "i3-msg 'workspace 2; append_layout /home/joachim/.config/i3/workspace2.json'"
 exec --no-startup-id "i3-msg 'workspace 3; append_layout /home/joachim/.config/i3/workspace3.json'"
-exec termite
-exec termite
+exec alacritty
+exec alacritty
 exec vivaldi-stable
 exec claws-mail
